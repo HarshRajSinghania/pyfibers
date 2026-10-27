@@ -404,9 +404,7 @@ class Fiber:
                 raise ValueError("passive_end_nodes tuple must contain two non-negative integers")
             self._n_passive_start, self._n_passive_end = n_start, n_end
         else:
-            raise ValueError(
-                "passive_end_nodes must be bool, non-negative int, or tuple of two non-negative ints"
-            )
+            raise ValueError("passive_end_nodes must be bool, non-negative int, or tuple of two non-negative ints")
         self.__is_3d = is_3d
 
         # recording
